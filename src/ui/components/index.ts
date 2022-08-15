@@ -1,3 +1,3 @@
 export * from './Atoms'
-export * from './Main'
+export * from './Mols/Main'
 export * from './Templates'

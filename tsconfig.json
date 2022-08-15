@@ -30,7 +30,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-     "src/ui/components/Main/__snapshots__/test.tsx.snap",
+     "src/ui/components/Mols/Main/__snapshots__/test.tsx.snap",
      "src"
     ]
 }
