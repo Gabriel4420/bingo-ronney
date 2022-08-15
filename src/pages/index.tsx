@@ -1,4 +1,4 @@
-import Home from 'ui/pages/Home'
+import { Home } from '@/ui'
 
 export default function HomeRoute() {
   return <Home />
