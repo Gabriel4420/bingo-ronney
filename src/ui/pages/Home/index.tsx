@@ -1,10 +1,11 @@
-import Main from 'ui/components/Main'
+import { Header } from '@/ui'
+
 import * as S from './styles'
 
 export default function Home() {
   return (
     <S.Wrapper>
-      <Main />
+      <Header />
     </S.Wrapper>
   )
 }

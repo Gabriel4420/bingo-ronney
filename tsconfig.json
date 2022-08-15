@@ -18,7 +18,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@/*":["*"]
+    }
   },
   "exclude": [
     "node_modules"
@@ -26,6 +29,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-  ]
+    "**/*.tsx",
+     "src/ui/components/Main/__snapshots__/test.tsx.snap",
+     "src"
+    ]
 }
