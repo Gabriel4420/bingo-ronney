@@ -5,7 +5,7 @@ import * as S from './styles'
 const Bingo: React.FC = () => {
   return (
     <S.Background>
-      <BallsFinished></BallsFinished>
+      <BallsFinished />
     </S.Background>
   )
 }

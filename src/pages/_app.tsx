@@ -1,4 +1,3 @@
-import { Header } from '@/ui'
 import { UserContextProvider } from '@/ui/contexts/UserContext'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -17,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <UserContextProvider>
         <GlobalStyles />
-        <Header />
+
         <Component {...pageProps} />
       </UserContextProvider>
     </>
