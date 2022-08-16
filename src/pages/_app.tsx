@@ -1,3 +1,5 @@
+import { Header } from '@/ui'
+import { UserContextProvider } from '@/ui/contexts/UserContext'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
@@ -13,8 +15,11 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="Um bingo" />
       </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <UserContextProvider>
+        <GlobalStyles />
+        <Header />
+        <Component {...pageProps} />
+      </UserContextProvider>
     </>
   )
 }
