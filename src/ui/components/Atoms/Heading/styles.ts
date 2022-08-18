@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 interface Props {
   bold?: boolean
+  color?: string
 }
 
 export const Background = styled.div<Props>`
@@ -12,6 +13,7 @@ export const Background = styled.div<Props>`
   h5,
   h6 {
     padding: 5px;
+    color: ${(props) => (props.color ? props.color : '#3333')};
   }
 
   h1 {

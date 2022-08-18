@@ -5,17 +5,19 @@ interface HeadingProps {
   types: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   content: string
   bold?: boolean
+  color?: string
 }
 
 const Heading: React.FC<HeadingProps> = ({
   types,
   content,
-  bold
+  bold,
+  color
 }: HeadingProps) => {
   switch (types) {
     case 'h1':
       return (
-        <S.Background bold={bold}>
+        <S.Background bold={bold} color={color}>
           <h1>{content}</h1>
         </S.Background>
       )
