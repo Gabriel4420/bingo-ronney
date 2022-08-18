@@ -3,6 +3,7 @@ import styled from 'styled-components'
 interface Props {
   bold?: boolean
   color?: string
+  fontSize?: string
 }
 
 export const Background = styled.div<Props>`
@@ -13,37 +14,27 @@ export const Background = styled.div<Props>`
   h5,
   h6,
   p {
-    padding: 5px;
-    color: ${(props) => (props.color ? props.color : '#222')};
-  }
-
-  h1 {
-    font-size: 26px;
+    padding: 1px;
+    color: ${({ color }) => (color ? color : '#222')} !important;
     font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
   }
+`
 
-  h2 {
-    font-size: 24px;
-    font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
-  }
-
-  h3 {
-    font-size: 22px;
-    font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
-  }
-
-  h4 {
-    font-size: 18px;
-    font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
-  }
-
-  h5 {
-    font-size: 16px;
-    font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
-  }
-
-  h6 {
-    font-size: 14px;
-    font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
-  }
+export const text1 = styled.h1<Props>`
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '26px')};
+`
+export const text2 = styled.h2<Props>`
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '24px')};
+`
+export const text3 = styled.h3<Props>`
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '22px')};
+`
+export const text4 = styled.h4<Props>`
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '18px')};
+`
+export const text5 = styled.h5<Props>`
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '16px')};
+`
+export const text6 = styled.h6<Props>`
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '14px')};
 `

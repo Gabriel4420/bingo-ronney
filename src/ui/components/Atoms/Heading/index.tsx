@@ -6,60 +6,62 @@ interface HeadingProps {
   content: string
   bold?: boolean
   color?: string
+  fontSize?: string
 }
 
 const Heading: React.FC<HeadingProps> = ({
   types,
   content,
   bold,
-  color
+  color,
+  fontSize
 }: HeadingProps) => {
   switch (types) {
     case 'h1':
       return (
-        <S.Background bold={bold} color={color}>
+        <S.Background bold={bold} color={color} fontSize={fontSize}>
           <h1>{content}</h1>
         </S.Background>
       )
       break
     case 'h2':
       return (
-        <S.Background bold={bold}>
+        <S.Background bold={bold} fontSize={fontSize}>
           <h2>{content}</h2>
         </S.Background>
       )
       break
     case 'h3':
       return (
-        <S.Background bold={bold}>
+        <S.Background bold={bold} fontSize={fontSize}>
           <h3>{content}</h3>
         </S.Background>
       )
       break
     case 'h4':
       return (
-        <S.Background bold={bold}>
+        <S.Background bold={bold} fontSize={fontSize}>
           <h4>{content}</h4>
         </S.Background>
       )
       break
     case 'h5':
       return (
-        <S.Background bold={bold}>
+        <S.Background bold={bold} fontSize={fontSize}>
           <h5>{content}</h5>
         </S.Background>
       )
       break
     case 'h6':
       return (
-        <S.Background bold={bold}>
+        <S.Background bold={bold} fontSize={fontSize}>
           <h6>{content}</h6>
         </S.Background>
       )
       break
     case 'p':
       return (
-        <S.Background bold={bold}>
+        <S.Background bold={bold} fontSize={fontSize}>
           <p>{content}</p>
         </S.Background>
       )

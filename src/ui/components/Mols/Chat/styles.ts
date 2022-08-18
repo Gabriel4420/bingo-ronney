@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const Background = styled.aside`
-  width: 316px;
-  height: 928px;
-  z-index: 99;
+  width: 268px;
+  height: 99vh;
+  margin: 0.5em 1em;
   background: #532568;
-  border-radius: 30px;
+  border-radius: 20px;
+  padding: 1rem;
 `
