@@ -1,1 +1,2 @@
-export { default as Main } from './Main'
+export { default as BallsFinished } from './BallsFinished'
+export { default as SessionStatus } from './SessionStatus'
