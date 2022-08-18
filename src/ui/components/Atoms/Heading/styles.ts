@@ -11,9 +11,10 @@ export const Background = styled.div<Props>`
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  p {
     padding: 5px;
-    color: ${(props) => (props.color ? props.color : '#3333')};
+    color: ${(props) => (props.color ? props.color : '#222')};
   }
 
   h1 {

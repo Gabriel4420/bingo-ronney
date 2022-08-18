@@ -1,4 +1,5 @@
-import { BallsFinished, SessionStatus } from '@/ui'
+import { BallsFinished, SessionStatus, Chat } from '@/ui'
+
 import React from 'react'
 import * as S from './styles'
 
@@ -7,6 +8,7 @@ const Bingo: React.FC = () => {
     <S.Background>
       <BallsFinished />
       <SessionStatus />
+      <Chat />
     </S.Background>
   )
 }
