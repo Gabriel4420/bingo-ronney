@@ -15,7 +15,10 @@ const Avatar: React.FC<AvatarProps> = ({
   imageurl
 }: AvatarProps) => {
   return (
-    <S.Image src={imageurl} width={width} height={height} border={border} />
+    <>
+      <S.Image src={imageurl} width={width} height={height} border={border} />
+      <S.Status />
+    </>
   )
 }
 
