@@ -19,50 +19,64 @@ const Heading: React.FC<HeadingProps> = ({
   switch (types) {
     case 'h1':
       return (
-        <S.Background bold={bold} color={color} fontSize={fontSize}>
-          <h1>{content}</h1>
+        <S.Background>
+          <S.text1 bold={bold} color={color} fontSize={fontSize}>
+            {content}
+          </S.text1>
         </S.Background>
       )
       break
     case 'h2':
       return (
-        <S.Background bold={bold} fontSize={fontSize}>
-          <h2>{content}</h2>
+        <S.Background>
+          <S.text2 bold={bold} color={color} fontSize={fontSize}>
+            {content}
+          </S.text2>
         </S.Background>
       )
       break
     case 'h3':
       return (
-        <S.Background bold={bold} fontSize={fontSize}>
-          <h3>{content}</h3>
+        <S.Background>
+          <S.text3 bold={bold} color={color} fontSize={fontSize}>
+            {content}
+          </S.text3>
         </S.Background>
       )
       break
     case 'h4':
       return (
-        <S.Background bold={bold} fontSize={fontSize}>
-          <h4>{content}</h4>
+        <S.Background>
+          <S.text4 bold={bold} color={color} fontSize={fontSize}>
+            {content}
+          </S.text4>
         </S.Background>
       )
       break
     case 'h5':
       return (
-        <S.Background bold={bold} fontSize={fontSize}>
-          <h5>{content}</h5>
+        <S.Background>
+          <S.text5 bold={bold} color={color} fontSize={fontSize}>
+            {content}
+          </S.text5>
         </S.Background>
       )
       break
     case 'h6':
       return (
-        <S.Background bold={bold} fontSize={fontSize}>
-          <h6>{content}</h6>
+        <S.Background>
+          <S.text6 bold={bold} color={color} fontSize={fontSize}>
+            {content}
+          </S.text6>
         </S.Background>
       )
       break
     case 'p':
       return (
-        <S.Background bold={bold} fontSize={fontSize}>
-          <p>{content}</p>
+        <S.Background>
+          <S.paragraph bold={bold} color={color} fontSize={fontSize}>
+            {content}
+          </S.paragraph>
         </S.Background>
       )
       break

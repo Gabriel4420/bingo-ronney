@@ -1,5 +1,5 @@
 import React from 'react'
-import Ball from '../../Atoms/Ball'
+import { Ball } from '@/ui'
 import * as S from './styles'
 
 const BallsFinished: React.FC = () => {

@@ -9,7 +9,7 @@ export const Background = styled.div`
   border-radius: 30px;
   max-width: 312px;
   width: 80%;
-  min-height: 370px;
+  max-height: 300px;
   height: 100%;
   margin: 10px;
 `

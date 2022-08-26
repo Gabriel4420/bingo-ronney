@@ -7,4 +7,7 @@ export const Background = styled.aside`
   background: #532568;
   border-radius: 20px;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `

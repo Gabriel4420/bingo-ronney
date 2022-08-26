@@ -5,8 +5,8 @@ import { Heading } from '@/ui'
 const SessionStatus: React.FC = () => {
   return (
     <S.Background>
-      <Heading types="h1" content="Bingo do josé" bold />
-      <Heading types="h4" content="Sessão Iniciada" bold />
+      <Heading types="h1" content="Bingo do josé" bold color="white" />
+      <Heading types="h4" content="Sessão Iniciada" bold color="#0df30d" />
     </S.Background>
   )
 }

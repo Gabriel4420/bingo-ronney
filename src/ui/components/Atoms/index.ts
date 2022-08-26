@@ -1,3 +1,6 @@
 export { default as Button } from './Button'
 export { default as Ball } from './Ball'
 export { default as Heading } from './Heading'
+export { default as Avatar } from './Avatar'
+export { default as Label } from './Label'
+export { default as Input } from './Input'

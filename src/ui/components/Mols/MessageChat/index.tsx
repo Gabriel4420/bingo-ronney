@@ -1,4 +1,4 @@
-import { Ball, Heading } from '@/ui'
+import { Ball, Heading, Avatar } from '@/ui'
 import { FC } from 'react'
 
 import * as S from './styles'
@@ -6,23 +6,24 @@ import * as S from './styles'
 interface MsgProps {
   author: string
   message: string
+  imageUrl: string
 }
 
-const MessageChat: FC<MsgProps> = ({ message, author }: MsgProps) => {
+const MessageChat: FC<MsgProps> = ({ message, author, imageUrl }: MsgProps) => {
   return (
     <S.Background>
       <S.AvatarArea>
-        <Ball number={'2'} />
+        <Avatar imageurl={imageUrl} width="50px" height="50px" />
       </S.AvatarArea>
       <S.TextArea>
         <Heading
-          types="h2"
+          types="h5"
           content={`@${author}`}
           bold
           color="#fff"
-          fontSize="12px"
+          fontSize="14px"
         />
-        <Heading types="p" content={message} color="#ffff" fontSize="8px" />
+        <Heading types="p" content={message} color="#ffff" fontSize="12px" />
       </S.TextArea>
     </S.Background>
   )

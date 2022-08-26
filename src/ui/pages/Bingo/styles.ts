@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 
-export const Background = styled.div`
+export const BackgroundMain = styled.main`
   display: flex;
-
-  justify-content: space-between;
-  max-width: 1440px;
-  width: 100%;
-  background-color: #e9e9e9;
+  width: 100vw;
+  height: 100vh;
 `

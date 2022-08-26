@@ -6,7 +6,7 @@ export const Background = styled.div`
   justify-content: space-between;
   margin: 10px;
   width: 95%;
-  height: 29.17px;
+  height: 50.17px;
 
   background: rgba(217, 217, 217, 0.08);
   border-radius: 16px;
@@ -15,9 +15,9 @@ export const Background = styled.div`
 export const TextArea = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  line-heigth: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 20px;
   width: 100%;
 `
 
