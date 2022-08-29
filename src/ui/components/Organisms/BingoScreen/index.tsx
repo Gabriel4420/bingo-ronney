@@ -1,4 +1,5 @@
-import { CenterArea, Chat, TopArea } from '@/ui'
+import { CenterArea, Chat, TopArea, FooterArea } from '@/ui'
+
 import * as S from './style'
 
 const BingoScreen = () => {
@@ -7,10 +8,10 @@ const BingoScreen = () => {
       <S.Background>
         <TopArea />
         <CenterArea />
+        <FooterArea />
       </S.Background>
-      <div style={{ backgroundColor: '#e3e3e3' }}>
-        <Chat />
-      </div>
+
+      <Chat />
     </>
   )
 }
