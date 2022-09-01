@@ -6,6 +6,7 @@ interface BallProp {
   width?: string
   internalheight?: string
   internalwidth?: string
+  fontSize?: string
 }
 
 export const Esphere = styled.div<BallProp>`
@@ -33,6 +34,6 @@ export const Inside = styled.div<BallProp>`
   width: ${(props) => (props.internalwidth ? props.internalwidth : '35px')};
   height: ${(props) => (props.internalheight ? props.internalheight : '35px')};
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '2rem')};
   font-weight: bold;
 `

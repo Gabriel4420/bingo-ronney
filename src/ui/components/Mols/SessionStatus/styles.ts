@@ -12,4 +12,6 @@ export const Background = styled.div`
   max-height: 300px;
   height: 100%;
   margin: 10px;
+  position: relative;
+  left: -50px;
 `

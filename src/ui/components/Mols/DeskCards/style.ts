@@ -5,4 +5,5 @@ export const Background = styled.div`
   width: 100%;
   height: 210px;
   margin: 20px;
+  max-width: 880px;
 `

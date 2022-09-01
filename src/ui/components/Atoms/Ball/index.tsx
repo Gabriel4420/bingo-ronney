@@ -9,6 +9,7 @@ interface BallProp {
   width?: string
   internalheight?: string
   internalwidth?: string
+  fontSize?: string
 }
 
 const Ball: React.FC<BallProp> = ({
@@ -17,11 +18,16 @@ const Ball: React.FC<BallProp> = ({
   height,
   width,
   internalheight,
-  internalwidth
+  internalwidth,
+  fontSize
 }: BallProp) => {
   return (
     <S.Esphere bgColor={bgColor} height={height} width={width}>
-      <S.Inside internalheight={internalheight} internalwidth={internalwidth}>
+      <S.Inside
+        internalheight={internalheight}
+        internalwidth={internalwidth}
+        fontSize={fontSize}
+      >
         {number}
       </S.Inside>
     </S.Esphere>

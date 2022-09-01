@@ -17,6 +17,7 @@ const CenterArea = () => {
         width="150px"
         internalwidth="90px"
         internalheight="90px"
+        fontSize="3rem"
       />
     </S.BallContentArea>
   )

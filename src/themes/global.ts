@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
   html, body, #__next {
     height: 100%;
     background-color: #e9e9e9;
+    overflow-x:hidden;
   }
 
   body {
