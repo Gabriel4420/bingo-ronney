@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { table1 } from '../../../../data/values.json'
 
 import * as S from './style'
