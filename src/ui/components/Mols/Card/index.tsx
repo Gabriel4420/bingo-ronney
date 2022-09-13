@@ -1,30 +1,27 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
+
+import { table1 } from '../../../../data/values.json'
 
 import * as S from './style'
 
-interface CardProps {
-  number: number
-}
-
-const Card: FC<CardProps> = ({ number }: CardProps) => {
-  const [isMarked, setIsMarked] = useState(Array<boolean>)
-
-  const x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 50]
-
+const Card = () => {
   return (
-    <S.Table>
-      {x.map((item, key) => {
-        return (
-          <S.CardBackground
-            isClick={isMarked[key]}
-            onClick={() => setIsMarked(isMarked)}
-            key={key}
-          >
-            <S.CardInternal isClick={isMarked[key]}>{item}</S.CardInternal>
-          </S.CardBackground>
-        )
-      })}
-    </S.Table>
+    <>
+      <S.Table>
+        <div className="cartela">
+          <h2 className="cartela-titulo">BINGO </h2>
+          <div className="cartela-corpo">
+            <div className="cartela-linha">
+              {table1.number.map((item: number, index: number) => (
+                <div className="cartela-casa" key={index}>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </S.Table>
+    </>
   )
 }
 

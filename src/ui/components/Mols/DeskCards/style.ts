@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const Background = styled.div`
-  background: url('./img/CardArea.png');
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(31, 30, 30, 0.603)),
+    url('./img/CardArea.png');
   width: 100%;
   height: 210px;
   margin: 20px;

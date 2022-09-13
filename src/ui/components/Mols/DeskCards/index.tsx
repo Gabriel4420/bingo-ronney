@@ -5,7 +5,10 @@ import Card from '../Card'
 const DeskCards: FC = () => {
   return (
     <S.Background>
-      <Card number={3} />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </S.Background>
   )
 }
