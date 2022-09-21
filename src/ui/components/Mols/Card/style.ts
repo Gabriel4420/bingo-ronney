@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-
+import data from '../../../../data/values.json'
 interface CardInternal {
-  isClick: boolean
+  isClick?: boolean
+  color?: string
 }
 
-export const Table = styled.main`
+export const Table = styled.main<CardInternal>`
   display: flex;
   padding: 10px;
 
@@ -48,24 +49,29 @@ export const Table = styled.main`
     color: white;
   }
 
-  .cartela-casa {
-    max-width: 100%;
-    width: 33%;
-    height: 100%;
-    max-height: 100%;
-    border-collapse: separate;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 2px solid white;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 2px;
-
-    margin: 0 auto;
+  .active {
+    border: 2px solid ${(props) => props.color};
   }
+`
+
+export const CardHome = styled.div<CardInternal>`
+  max-width: 100%;
+  width: 33%;
+  height: 100%;
+  max-height: 100%;
+  border-collapse: separate;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid white;
+
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2px;
+
+  margin: 0 auto;
 `
 
 export const CardBackground = styled.div<CardInternal>`

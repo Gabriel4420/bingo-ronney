@@ -1,21 +1,66 @@
 {
     "table1": {
-        "number": [
-            2,
-            15,
-            31,
-            7,
-            16,
-            34,
-            8,
-            20,
-            17,
-            9,
-            20,
-            36,
-            12,
-            29,
-            37
+        "numbers": [
+            {
+                "n": 2,
+                "color": "orange"
+            },
+            {
+                "n": 15,
+                "color": "orange"
+            },
+            {
+                "n": 31,
+                "color": "red"
+            },
+            {
+                "n": 7,
+                "color": "orange"
+            },
+            {
+                "n": 16,
+                "color": "green"
+            },
+            {
+                "n": 34,
+                "color": "red"
+            },
+            {
+                "n": 8,
+                "color": "orange"
+            },
+            {
+                "n": 20,
+                "color": "green"
+            },
+            {
+                "n": 17,
+                "color": "green"
+            },
+            {
+                "n": 9,
+                "color": "orange"
+            },
+            {
+                "n": 20,
+                "color": "green"
+            },
+            {
+                "n": 36,
+                "color": "red"
+            },
+            {
+                "n": 12,
+                "color": "orange"
+            },
+            {
+                "n": 29,
+                "color": "green"
+            },
+            {
+                "n": 37,
+                "color": "red"
+            }
         ],
         "orange": [
             2,
