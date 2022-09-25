@@ -5,7 +5,7 @@ export const Background = styled.aside`
   height: 630px;
   margin: 0.5em 1em;
   background: #532568;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 1rem;
   display: flex;
   flex-direction: column;

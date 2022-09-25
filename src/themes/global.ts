@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #__next {
     height: 100%;
-    background-color: #e9e9e9;
+    background-color: #333;
     overflow-x:hidden;
   }
 

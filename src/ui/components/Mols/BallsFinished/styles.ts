@@ -4,7 +4,7 @@ export const Background = styled.div`
   display: flex;
   flex-direction: column;
   background: radial-gradient(50% 50% at 50% 50%, #ab5fcf 0%, #3c1151 100%);
-  border-radius: 34px;
+  border-radius: 5px;
   max-width: 390px;
   width: 100%;
   max-height: 300px;

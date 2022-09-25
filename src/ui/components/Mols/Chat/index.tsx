@@ -12,7 +12,7 @@ const Chat: React.FC = () => {
         type="text"
         tooltip="Lugar aonde se insere uma mensagem de texto"
         placeholder="Digite sua mensagem"
-        radius="30px"
+        radius="5px"
       />
     </S.Background>
   )
